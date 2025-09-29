@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Agendamento - Clínica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Consultas</h1>
+
+    <!-- Formulário de Agendamento -->
+    <form id="form-agendamento" class="card">
+      <h2>Novo Agendamento</h2>
+      <input type="text" id="nome" placeholder="Nome do paciente" required>
+      <input type="date" id="data" required>
+      <input type="time" id="hora" required>
+      <input type="text" id="medico" placeholder="Médico responsável" required>
+      <button type="submit">Agendar</button>
+    </form>
+
+    <!-- Lista de Agendamentos com Pesquisa -->
+    <div class="card lista-agendamentos-card">
+      <div class="lista-header">
+        <h2>Lista de Agendamentos</h2>
+        <input type="text" id="pesquisa" placeholder="Nome do paciente">
+      </div>
+      <ul id="lista-agendamentos"></ul>
+    </div>
+
+   
+    <!-- Consulta por Médico e observações -->
+    <div class="card consulta-medico">
+    <h2>Consultar por Médico</h2>
+    <select id="select-medico">
+        <option value="">Selecione um médico</option>
+    </select>
+    <div id="resultado-medico"></div>
+    <div id="observacao-conflito" style="margin-top: 10px; color: red;"></div>
+    <button id="forcar-agendamento" style="display:none; margin-top: 10px;">Agendar mesmo assim</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
