@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Card Layout */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #0d47a1;
+}
+
+h2 {
+  font-size: 20px;
+  color: #1565c0;
+}
+
+/* Inputs e Botões */
+input, select, button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-size: 15px;
+}
+
+li button {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #b71c1c;
+}
+
+#resultado-medico {
+  margin-top: 15px;
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Lista de Agendamentos Header */
+.lista-agendamentos-card .lista-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-agendamentos-card .lista-header input {
+  width: 50%;
+}
